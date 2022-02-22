@@ -27,7 +27,7 @@ button.addEventListener("click", function (){
     button.innerHTML="ice" +global;
 })
 
-let poison = document.createElement("button");
+let button = document.createElement("button");
 button.innerHTML="poison" +global;
 
 button.addEventListener("click", function()){
@@ -36,5 +36,4 @@ button.addEventListener("click", function()){
 })
 
 
-document.body.appendChild(fire)
-document.body.appendChild(ice)
+document.body.appendChild(button)
