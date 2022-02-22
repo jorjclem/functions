@@ -11,29 +11,31 @@ function dragon(mess,global){
     document.body.appendChild(ele)
 }
 
-let button = document.createElement("button");
-button.innerHTML="Fire" + global;
+let fire = document.createElement("button");
+fire.innerHTML="Fire" + global;
 
-button.addEventListener("click",function (){
+fire.addEventListener("click",function (){
     global=global+3;
-    button.innerHTML="Fire" +global;
+    fire.innerHTML="Fire" +global;
 })
 
-let button = document.createElement("button");
-button.innerHTML="Ice" + global;
+let ice = document.createElement("button");
+ice.innerHTML="Ice" + global;
 
-button.addEventListener("click", function (){
+ice.addEventListener("click", function (){
     global=global+1;
-    button.innerHTML="ice" +global;
+    ice.innerHTML="ice" +global;
 })
 
-let button = document.createElement("button");
-button.innerHTML="poison" +global;
+let poison = document.createElement("button");
+poison.innerHTML="poison" +global;
 
-button.addEventListener("click", function()){
+poison.addEventListener("click", function(){
     global=global+4;
-    button.innerHTML="poison"+global;
+    poison.innerHTML="poison"+global;
 })
 
 
-document.body.appendChild(button)
+document.body.appendChild(fire)
+document.body.appendChild(ice)
+document.body.appendChild(poison)
