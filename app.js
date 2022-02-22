@@ -2,13 +2,14 @@ let global= 0
 
 dragon("dragons damage:")
 
-function dragon(mess,global){
+function dragon(damage, attack){
     let ele=document.createElement("div");
     let nameEle=document.createElement("h1");
 
-    nameEle.innerHTML=mess+global;
+    nameEle.innerHTML= "dragons damage:";
     ele.appendChild(nameEle)
     document.body.appendChild(ele)
+
 }
 
 let fire = document.createElement("button");
@@ -35,6 +36,9 @@ poison.addEventListener("click", function(){
     poison.innerHTML="poison"+global;
 })
 
+if (global > 10){
+    alert("You won!")
+}
 
 document.body.appendChild(fire)
 document.body.appendChild(ice)
